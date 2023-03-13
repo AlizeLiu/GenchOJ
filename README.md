@@ -1,15 +1,14 @@
 # LPOJ
+
 [![Python](https://img.shields.io/badge/python-3.7.2-success.svg?style=flat-round)](https://www.python.org/downloads/release/python-372/)
 [![Django Rest Framework](https://img.shields.io/badge/django_rest_framework-3.9.1-success.svg?style=flat-round)](http://www.django-rest-framework.org/)
 [![vue](https://img.shields.io/badge/vue-2.5.2-success.svg?style=flat-round)](https://github.com/vuejs/vue)
 [![travis-ci](https://travis-ci.org/Linzecong/LPOJ.svg?branch=master)](https://travis-ci.org/Linzecong/LPOJ)
-[![Join-QQ-Group](https://img.shields.io/badge/Join_QQ_Group-875136693-blue.svg?style=flat-round)](https://shang.qq.com/wpa/qunwpa?idkey=dcc9d5c63a744d5c09eda5dd7f4b208451e66b42ba633ea23ec6fa4d49135825)
 
-> 一个基于Vue.js和Django的轻量级在线评测系统
+
+> 项目地址：https://github.com/AlizeLiu/TestOJ.git
 >
-> 目前应用于广东外语外贸大学
-## 演示地址：[oj.lpoj.cn](https://oj.lpoj.cn)
-## 说明文档：[docs.lpoj.cn](https://docs.lpoj.cn)
+> 目前应用于GenchOJ的开发中
 
 ## 简述
 + 轻量级，易于部署和自定义定制
@@ -143,12 +142,6 @@ sudo docker-compose -f docker-compose-build.yml up -d --build --scale judger=3
 
 Modern browsers(chrome, firefox)
 
-## 特别感谢
-
-+ 广东外语外贸大学ACM集训队所有成员
-+ 广东外语外贸大学集训队所有老师
-+ [青岛大学在线评测系统](https://github.com/QingdaoU/OnlineJudge)
-+ [24OI/OI-wiki](https://github.com/24OI/OI-wiki)
 
 
 
