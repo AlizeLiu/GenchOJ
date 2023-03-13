@@ -44,12 +44,15 @@ sudo apt-get install -y git
 sudo apt install docker.io -y
 sudo apt install docker-compose -y
 ```
+如开发环境为kali或其他发行版本以及macOS，请自行匹配相应教程
 
 ### 2. 开始安装
 
 ```
-git clone https://github.com/Linzecong/LPOJ.git && cd LPOJ
+git clone https://github.com/AlizeLiu/TestOJ.git && cd GenchOj
 ```
+推荐使用SSH安装
+
 
 **请修改docker-compose.yml中的数据库密码（所有的 DB_PASSWORD，MYSQL_ROOT_PASSWORD 字段）和一些你认为必要的设置**
 
@@ -92,7 +95,7 @@ sudo docker-compose up -d --scale judger=3
 
 首先先下载源代码
 ```
-git clone https://github.com/Linzecong/LPOJ.git && cd LPOJ
+git clone https://github.com/AlizeLiu/TestOJ.git && cd GenchOJ
 ```
 
 然后随意修改你要修改的地方，修改完毕后，使用如下命令重新部署
@@ -122,21 +125,6 @@ sudo docker-compose -f docker-compose-build.yml up -d --build --scale judger=3
 1. 封榜功能
 2. 更优秀的排行榜显示（现在人数多了会卡）
 
-## 部分截图
-
-![image1](https://www.lpoj.cn/githubimage/image1.png)
-
-![image2](https://www.lpoj.cn/githubimage/image2.png)
-
-![image3](https://www.lpoj.cn/githubimage/image3.png)
-
-![image4](https://www.lpoj.cn/githubimage/image4.png)
-
-![image5](https://www.lpoj.cn/githubimage/image5.png)
-
-![image6](https://www.lpoj.cn/githubimage/image6.png)
-
-或者你可以直接访问我们  [oj.lpoj.cn](https://oj.lpoj.cn)
 
 ## 浏览器支持
 
