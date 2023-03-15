@@ -1,3 +1,4 @@
+//登录界面
 <template>
   <el-dialog title="登录" :visible.sync="dialogLoginVisible">
     <el-form :model="form" @keyup.native.enter="loginClick">
