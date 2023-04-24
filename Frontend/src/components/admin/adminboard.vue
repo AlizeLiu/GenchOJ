@@ -35,8 +35,8 @@
       <el-form-item label="Vjudge账号">
         <el-input v-model="vjudge" placeholder="请填写Vjudge账号，无则留空" style="width:200px"></el-input>
       </el-form-item>
-      <el-form-item label="LPOJ账号">
-        <el-input v-model="lpoj" placeholder="请填写LPOJ账号，无则留空" style="width:200px"></el-input>
+      <el-form-item label="GenchOJ账号">
+        <el-input v-model="genchoj" placeholder="请填写GenchOJ账号，无则留空" style="width:200px"></el-input>
       </el-form-item>
       <el-form-item label="其他账号">
         <el-input v-model="otheraccount" placeholder="请填写其他账号，|分割" style="width:200px"></el-input>
@@ -63,7 +63,7 @@ export default {
       cf: "",
       hdu: "",
       vjudge: "",
-      lpoj: "",
+      genchoj: "",
       otheraccount:"",
       blog: "",
       classes: "",
@@ -84,7 +84,7 @@ export default {
           this.cf = li[0];
           this.hdu = li[1];
           this.vjudge = li[2];
-          this.lpoj = li[3];
+          this.genchoj = li[3];
           if(li.length > 4)
           this.otheraccount = li[4];
           this.blog = response.data.blogaddress;
@@ -129,7 +129,7 @@ export default {
       ).then(() => {
         if (this.isnew == false) {
           var acc = "";
-          acc = this.cf + "|" + this.hdu + "|" + this.vjudge + "|" + this.lpoj + "|" + this.otheraccount;
+          acc = this.cf + "|" + this.hdu + "|" + this.vjudge + "|" + this.genchoj + "|" + this.otheraccount;
           this.$axios
             .put("/board/" + this.username + "/", {
               username: this.username,
@@ -148,7 +148,7 @@ export default {
             });
         } else {
           var acc = "";
-          acc = this.cf + "|" + this.hdu + "|" + this.vjudge + "|" + this.lpoj + "|" + this.otheraccount;
+          acc = this.cf + "|" + this.hdu + "|" + this.vjudge + "|" + this.genchoj + "|" + this.otheraccount;
           this.$axios
             .post("/board/", {
               username: this.username,

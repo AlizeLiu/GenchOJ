@@ -55,7 +55,7 @@ export default {
   data() {
     return {
       name: "",
-      ojname: "LPOJ",
+      ojname: "GenchOJ",
       wikiopen: true,
       tableData: [],
       msg: "",

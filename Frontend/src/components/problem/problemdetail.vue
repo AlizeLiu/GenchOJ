@@ -4,7 +4,7 @@
       <el-row>
         <el-card shadow="always">
           <el-row :gutter="18"
-                  id="title">{{(this.oj=="LPOJ"?"LPOJ":"")+(this.oj=="LPOJ"?" - ":"")+(this.oj=="LPOJ"?this.proid:"")+' '}}{{title}}</el-row>
+                  id="title">{{(this.oj=="GenchOJ"?"GenchOJ":"")+(this.oj=="GenchOJ"?" - ":"")+(this.oj=="GenchOJ"?this.proid:"")+' '}}{{title}}</el-row>
           <br>
           <el-row :gutter="18"
                   id="des">Description</el-row>
@@ -341,7 +341,7 @@ export default {
         }
         this.code = this.codetemplate[this.language]
 
-        if (this.oj != "LPOJ") {
+        if (this.oj != "GenchOJ") {
           this.proid = this.source
         }
 
@@ -517,8 +517,8 @@ export default {
               contest: 0,
               code: this.code,
               testcase: 0,
-              message: this.oj == "LPOJ" ? "0" : (this.proid + ""),
-              problemtitle: (this.oj == "LPOJ" ? "LPOJ" : "") + (this.oj == "LPOJ" ? ' - ' : "") + (this.oj == "LPOJ" ? this.proid : "") + ' ' + this.title,
+              message: this.oj == "GenchOJ" ? "0" : (this.proid + ""),
+              problemtitle: (this.oj == "GenchOJ" ? "GenchOJ" : "") + (this.oj == "GenchOJ" ? ' - ' : "") + (this.oj == "GenchOJ" ? this.proid : "") + ' ' + this.title,
               rating: parseInt(sessionStorage.rating),
               ip: this.userip
             })

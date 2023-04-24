@@ -330,7 +330,7 @@ export default {
           }
           this.code = this.codetemplate[this.language]
 
-          if (this.oj != "LPOJ") {
+          if (this.oj != "GenchOJ") {
             this.proid = this.source
           }
           this.time = response.data.time + "MS";
@@ -433,7 +433,7 @@ export default {
                     this.imgcode = ''
                   });
 
-                  if (this.oj != "LPOJ") {
+                  if (this.oj != "GenchOJ") {
                     this.proid = this.source
                   }
                   this.time = response.data.time + "MS";
@@ -499,7 +499,7 @@ export default {
                 contestproblem: -1,
                 code: this.code,
                 testcase: 0,
-                message: this.oj == "LPOJ" ? "0" : this.proid + "",
+                message: this.oj == "GenchOJ" ? "0" : this.proid + "",
                 problemtitle: this.currentrankE,
                 rating: parseInt(sessionStorage.rating),
                 ip: this.userip
@@ -544,7 +544,7 @@ export default {
                 contestproblem: this.currentrank,
                 code: this.code,
                 testcase: 0,
-                message: this.oj == "LPOJ" ? "0" : this.proid + "",
+                message: this.oj == "GenchOJ" ? "0" : this.proid + "",
                 problemtitle: this.currentrankE,
                 rating: parseInt(sessionStorage.rating),
                 ip: this.userip

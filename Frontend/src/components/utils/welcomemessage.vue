@@ -2,6 +2,7 @@
   <el-card>
     <div slot="header">
       <b> {{school}}欢迎你</b>
+      <h3>欢迎访问内测版GenchOJ</h3>
     </div>
     <b>Version：0.0.1</b>
     <br>

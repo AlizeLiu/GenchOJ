@@ -4,7 +4,7 @@ services:
     build: ./Database
     command: --default-authentication-plugin=mysql_native_password
     environment:
-            MYSQL_ROOT_PASSWORD: "lpojdatabase" # 选择性修改
+            MYSQL_ROOT_PASSWORD: "Genchojdatabase" # 选择性修改
     ports:
      - "4406:3306"
     restart: always
@@ -27,10 +27,10 @@ services:
       '
     
     links: 
-      - db:lpojdatabase 
+      - db:Genchojdatabase 
     environment:
-            DB_PASSWORD: "lpojdatabase" # 选择性修改
-            DB_HOST: "lpojdatabase" # 选择性修改
+            DB_PASSWORD: "Genchojdatabase" # 选择性修改
+            DB_HOST: "Genchojdatabase" # 选择性修改
             DB_USER: 'root' # 选择性修改
             DB_PORT: 3306 # 选择性修改
     ports:
@@ -49,10 +49,10 @@ services:
       gunicorn -w 5 --bind 0.0.0.0:8000 -k 'gevent' Backend.wsgi:application
       '
     links: 
-      - db:lpojdatabase 
+      - db:Genchojdatabase 
     environment:
-            DB_PASSWORD: "lpojdatabase" # 选择性修改
-            DB_HOST: "lpojdatabase" # 选择性修改
+            DB_PASSWORD: "Genchojdatabase" # 选择性修改
+            DB_HOST: "Genchojdatabase" # 选择性修改
             DB_USER: 'root' # 选择性修改
             DB_PORT: 3306 # 选择性修改
     ports:
@@ -71,10 +71,10 @@ services:
       gunicorn -w 5 --bind 0.0.0.0:8000 -k 'gevent' Backend.wsgi:application
       '
     links: 
-      - db:lpojdatabase 
+      - db:Genchojdatabase 
     environment:
-            DB_PASSWORD: "lpojdatabase" # 选择性修改
-            DB_HOST: "lpojdatabase" # 选择性修改
+            DB_PASSWORD: "Genchojdatabase" # 选择性修改
+            DB_HOST: "Genchojdatabase" # 选择性修改
             DB_USER: 'root' # 选择性修改
             DB_PORT: 3306 # 选择性修改
     ports:
@@ -93,9 +93,9 @@ services:
       nginx -g "daemon off;"
       '
     links: 
-      - backend1:lpojbackend1
-      - backend2:lpojbackend2
-      - backend3:lpojbackend3
+      - backend1:Genchojbackend1
+      - backend2:Genchojbackend2
+      - backend3:Genchojbackend3
     ports:
      - "8080:80"
     restart: always
@@ -112,9 +112,9 @@ services:
       nginx -g "daemon off;"
       '
     links: 
-      - backend1:lpojbackend1
-      - backend2:lpojbackend2
-      - backend3:lpojbackend3
+      - backend1:Genchojbackend1
+      - backend2:Genchojbackend2
+      - backend3:Genchojbackend3
     ports:
      - "8081:8081"
     restart: always
@@ -131,10 +131,10 @@ services:
       python main.py
       '
     links: 
-      - db:lpojdatabase
+      - db:Genchojdatabase
     environment:
-            DB_PASSWORD: "lpojdatabase" # 选择性修改
-            DB_HOST: "lpojdatabase" # 选择性修改
+            DB_PASSWORD: "Genchojdatabase" # 选择性修改
+            DB_HOST: "Genchojdatabase" # 选择性修改
             DB_USER: 'root' # 选择性修改
             DB_PORT: 3306 # 选择性修改
     ports:
