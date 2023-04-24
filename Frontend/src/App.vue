@@ -81,23 +81,7 @@
 
     <div class="footer">
       <p>
-        Powered by
-        <a href="https://github.com/Linzecong/LPOJ"
-           target="_blank"
-           style="text-decoration: none;color:#409EFF;">Linzecong</a>
-        <span>
-          &nbsp; Version: 3.4&nbsp;&nbsp; Docs:&nbsp;&nbsp;
-          <a href="https://docs.lpoj.cn"
-             target="_blank"
-             style="text-decoration: none;color:#409EFF;">LPOJ Docs</a>&nbsp;&nbsp;欢迎加入LPOJ讨论群: 875136693&nbsp;&nbsp;
-          <a target="_blank"
-             href="//shang.qq.com/wpa/qunwpa?idkey=dcc9d5c63a744d5c09eda5dd7f4b208451e66b42ba633ea23ec6fa4d49135825">
-            <img border="0"
-                 src="//pub.idqqimg.com/wpa/images/group.png"
-                 alt="LPOJ讨论群"
-                 title="LPOJ讨论群">
-          </a>
-        </span>
+        Powered by AlizeLiu
       </p>
     </div>
   </div>
@@ -113,7 +97,7 @@ export default {
   data () {
     return {
       activeIndex: "1",
-      school: "LPOJ",
+      school: "GenchOJ",
       loginshow: sessionStorage.username,
       username: sessionStorage.username,
       name: sessionStorage.name,
@@ -129,13 +113,13 @@ export default {
         .get("/settingboard/")
         .then(res => {
           if (res.data.length > 0) this.school = res.data[0].ojname;
-          else this.school = "LPOJ";
+          else this.school = "GenchOJ";
           this.$store.state.sb = res.data
         });
     }
     else {
       if (sb.length > 0) this.school = sb[0].ojname;
-      else this.school = "LPOJ";
+      else this.school = "GenchOJ";
     }
 
 

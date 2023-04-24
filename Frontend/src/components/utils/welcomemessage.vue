@@ -1,12 +1,10 @@
 <template>
   <el-card>
     <div slot="header">
-      <b>Welcome to {{school}}</b>
+      <b> {{school}}欢迎你</b>
     </div>
-    <b>Version：3.4</b>
+    <b>Version：0.0.1</b>
     <br>
-    <h3><a href="https://github.com/Linzecong/LPOJ" target="_blank" style="text-decoration: none;color:#409EFF;">Github (Give Me A Star!)</a></h3>
-    <h3><a href="https://docs.lpoj.cn" target="_blank" style="text-decoration: none;color:#67C23A;">Documentation</a></h3>
   </el-card>
 </template>
 
@@ -15,7 +13,7 @@ export default {
   name: "welcomemessage",
   data() {
     return {
-      school:"LPOJ",
+      school:"GenchOJ",
     };
   },
   created() {
@@ -27,18 +25,18 @@ export default {
       .get("/settingboard/")
       .then(res => {
         if (res.data.length > 0) this.school = res.data[0].ojname;
-        else this.school = "LPOJ";
+        else this.school = "GenchOJ";
         this.$store.state.sb = res.data
       })
       .catch(error => {
         this.$message.error(
-          "服务器错误！可能是本OJ没有开启游客访问，请先登录！"
+          "使用服务必须登录！"
         );
       });
     }
     else{
       if (sb.length > 0) this.school = sb[0].ojname;
-        else this.school = "LPOJ";
+        else this.school = "GenchOJ";
     }
 
 

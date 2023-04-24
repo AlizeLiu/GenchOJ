@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.5)
+pmcmake_minimum_required(VERSION 2.5)
 project(judger C)
 
 #set(CMAKE_VERBOSE_MAKEFILE ON)
