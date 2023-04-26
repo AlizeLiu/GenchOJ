@@ -151,10 +151,10 @@ services:
       python main.py
       '
     links: 
-      - db:lpojdatabase
+      - db:Genchojdatabase
     environment:
-            DB_PASSWORD: "lpojdatabase" # 选择性修改
-            DB_HOST: "lpojdatabase" # 选择性修改
+            DB_PASSWORD: "Genchojdatabase" # 选择性修改
+            DB_HOST: "Gecnhojdatabase" # 选择性修改
             DB_USER: 'root' # 选择性修改
             DB_PORT: 3306 # 选择性修改
     restart: always
@@ -170,11 +170,11 @@ services:
       '
     links: 
       - judgerserver:lpojjudgerserver
-      - db:lpojdatabase
+      - db:Genchojdatabase
       - backend1:lpojbackend1
     environment:
-      DB_PASSWORD: "lpojdatabase" # 选择性修改
-      DB_HOST: "lpojdatabase" # 选择性修改
+      DB_PASSWORD: "Genchojdatabase" # 选择性修改
+      DB_HOST: "Genchojdatabase" # 选择性修改
       DB_USER: 'root' # 选择性修改
       DB_PORT: 3306
       SERVER_IP: "lpojjudgerserver"

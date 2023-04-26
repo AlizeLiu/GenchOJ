@@ -1,5 +1,4 @@
 FROM swift:5.1
-MAINTAINER linzecong
 ADD . ./Judger
 WORKDIR /Judger
 RUN apt-get update
