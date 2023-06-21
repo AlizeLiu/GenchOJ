@@ -177,10 +177,10 @@ services:
       DB_HOST: "Genchojdatabase" # 选择性修改
       DB_USER: 'root' # 选择性修改
       DB_PORT: 3306
-      SERVER_IP: "lpojjudgerserver"
+      SERVER_IP: "genchojjudgerserver"
       
       BACKEND_PORT: 8000
-      BACKEND_IP: "lpojbackend1"
+      BACKEND_IP: "genchojbackend1"
       BACKEND_HEAD: 'http'
       
       NO_DOWNLOAD: "no"
