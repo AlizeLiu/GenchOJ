@@ -1,1 +1,0 @@
-# 这是各种工具文件夹，使用方法详见 [docs.lpoj.cn](https://docs.lpoj.cn)
