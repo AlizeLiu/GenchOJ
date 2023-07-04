@@ -9,7 +9,7 @@
 - OJ简介
     - GenchOJ是基于vue3+Django技术栈开发的online judge系统，系统由前端，后端，judger端，爬虫服务四部分组成。其中，judger端采用了Hust OJ的开源技术，其余部分由GenchOJ项目组自行完成或补充。
 
-    - [项目地址](https://github.com/AlizeLiu/GenchOJ-0.0.1)
+    - [项目地址](https://github.com/AlizeLiu/GenchOJ)
 
 
 ## 简述
@@ -41,7 +41,7 @@
 ```
     mkdir GenchOJ
     cd GenchOJ 
-    git clone https://github.com/AlizeLiu/GenchOJ-0.0.1.git
+    git clone https://github.com/AlizeLiu/GenchOJ.git
 ```
 
 <br> 
@@ -58,7 +58,9 @@ npm run build
 
 - 等待npm编译前端，编译成功后可以在前端中的dist文件夹找到编译成功后的静态文件。
 
-- 生产环境使用的服务器建议为nginx，一下教程均基于nginx进行 
+- 生产环境使用的服务器建议为nginx，一下教程均基于nginx进行
+
+- 如工具使用VSCode，需要自行解决自动下载最新版本依赖导致的依赖冲突
 
 <br> 
 <br> 
