@@ -36,8 +36,11 @@
 - 爬虫部分： Ubuntu 22.04 + Python 3.9
 
 ## 部署说明
+
 <br> 
+
 1. 首先从git上clone代码，准备进行部署。
+
 ```
     mkdir GenchOJ
     cd GenchOJ 
