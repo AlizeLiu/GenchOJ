@@ -1,7 +1,0 @@
-services:
-  - docker
- 
-
-
-script:
-  - docker-compose -f docker-compose-build.yml build
